@@ -83,25 +83,75 @@ body {
 /* MAIN CONTENT */
 
 .main-content {
-    max-width: 120rem;
+    max-width: 80rem;
+    padding: 3.2rem;
  }
 
-/* HOME TAB */
-
-.home {
+.home, .contact {
     background-color: rgba(0, 0 ,0 , 0.5);
-    padding: 6rem 4rem;
     display: flex;
+    padding: 6rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+    border: 1px solid white;
+}
+
+.contact {
+    align-items: start;
+}
+
+.home-paragraph, .contact-paragraph {
     color: white;
     font-size: 2.4rem;
     font-weight: 700;
 }
 
 .home-img {
-    width: 25%;
+    width: 60%;
     margin-top: 2rem;
+}
+
+.contact-img {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.menu {
+    background-color: rgba(0, 0 ,0 , 0.5);
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid white;
+    gap: 1rem;
+}
+
+.meal {
+    box-shadow: 0 0.7rem 2.4rem rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.4s;
+    text-align: center;
+}
+
+.meal:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 1.2rem 2.4rem rgba(255, 255, 255, 0.75);
+}
+
+
+.meal-content {
+    padding: 2.4rem;
+    background: white;
+    margin-top: -2px;
+}
+
+.meal-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.meal-img {
+    width: 100%;
 }
